@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{text-align: center;}
+        pre{ font-size: 20px;
+        text-align: center;}
+        .json{text-align: left;
+        padding-left: 20%;}
+    </style>
+</head>
+<body>
+    <h1>台灣護照號碼</h1>
+    <pre>
+        現在的台灣晶片護照，護照號碼共9位數，沒有英文。
+    護照號碼並非隨機編碼。且每次更換護照，護照號碼都會變動。
+    </pre>
+    <pre class="json">  
+        {   "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+                "code": "PPN"
+              }
+            ]
+          },
+          "system": " https://www.dicom.org.tw/cs/ppn_tw",
+          "value": "12345678910"
+      }    
+    </pre>
+</body>
+
+</html>
