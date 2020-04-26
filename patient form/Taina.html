@@ -2,26 +2,66 @@
 <html>
 <head>
     <style>
-        h1{text-align: center;}
-        pre{font-size: 20px;
-        text-align: center;}
-        .json{text-align: left;
-        padding-left: 20%;}
+        h1{text-align: center;
+        font-size: 50px;
+        }
+        p{font-size: 20px;
+        text-align: left;}
+        div{margin-left: 10%;
+        margin-right: 10%;}
+        table{table-layout: fixed;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 10px;}
+        td{padding: 50px;}
+        il{font-size: 20px;}
+        li{font-size: 30px;}
+        .introduction{font-size: 20px;}
+        .main{margin-left: 20%;
+        margin-right: 20%;}
+        pre{font-size: 20px;}
     </style>
 
 </head>
 <body>
+    <br>
     <h1>台胞證碼</h1>
-    <pre>
+    <div class="main">
+    <li class="introduction">
         自1992年5月啟用，臺胞證號碼由10位阿拉伯數字和帶括號的2位阿拉伯數字或1位英文字母組成。
     其中前8位數字為終身號碼，緊接著的2位數為證件版本號，代表領證次數，而括號內的英文字母
     或阿拉伯數字則是公安部出入境管理局委託的簽發機關的代碼，主要委託外交部駐香港特派員公
     署(A)、香港中國旅行社(B)、外交部駐澳門特派員公署(C)、澳門中國旅行社(D)，由廣東省公安
     廳簽發；其他簽發地由上海市公安局(31)、江蘇省公安廳(32)、福建省公安廳(35)簽發。代表簽
     發機關的兩位數字與大陸居民身份證首兩位數字的規則定義相同。
-    </pre>
-    <pre class="json">
+    </li>
+    <li class="introduction">
+        大陸在2018年發布台胞申請居住證的細則，台胞居住證號碼的編碼順序，完全比照大陸身分證號碼，
+    大陸身分證的編碼方式，前6碼是地址碼，接著8碼是西元出生年月日，後三碼是順序碼，主要是大陸
+    人口眾多，常會出現地址碼與出生年月日相同的人，為了加以辨識，就以順序碼的方式解決，其中奇
+    數分配給男性，偶數分配給女性。最後一碼是校驗碼。
+    </li>
+    </br>
+    <hr>
+    </div>
+    <div>
+        <pre class="json">
+            { "type": {
+                "coding": [
+                  {
+                    "system": "https://www.dicom.org.tw/cs/identifierValusSet",
+                    "code": " TIC"
+                  }
+                ]	
+              },
+              "system": https://www.dicom.org.tw/cs/ identityCardNumber_cn
+              "value": " 830100197806200218"
+              }
+        }
         
-    </pre>
+    
+        </pre>
+    </div>
 </body>
 </html>
