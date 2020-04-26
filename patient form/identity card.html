@@ -2,36 +2,57 @@
 <html>
     <head>
         <style>
-        pre{ font-size: 20px;
-        text-align: center;}
-        h1{text-align: center;}
-        .json{
-            text-align: left;
-            padding-left: 20%;
+       h1{text-align: center;
+        font-size: 50px;
         }
+        p{font-size: 20px;
+        text-align: left;}
+        div{margin-left: 10%;
+        margin-right: 10%;}
+        table{table-layout: fixed;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 10px;}
+        td{padding: 50px;}
+        il{font-size: 20px;}
+        li{font-size: 30px;}
+        .introduction{font-size: 20px;}
+        .main{margin-left: 20%;
+        margin-right: 20%;}
+        pre{font-size: 20px;}
         </style>
     </head>
     <body>
-        <h1>台灣身份證字號規定</h1>
-        <pre>
-            目前的中華民國身分證字號一共有十碼，包括起首一個大寫的英文字母與接續的九個阿拉伯數字。
-        其中首碼英文代碼是以初次登記的戶籍地（報戶口之地區）來區分的，而首位數字則是拿來區分
-        性別，男性為1、女性為2，與ISO 5218以及類似的《中華民國國家標準》CNS 8381《資訊交換
-        -人類性別表示法》的用法相同。
-        </pre>
-        <pre class="json">
-            { "type": {
-                "coding": [
-                  {
-                    "system": "https://www.dicom.org.tw/cs/identifierValusSet",
-                    "code": " IDN"
-                  }	
-                ]	
-              },
-              "system": "https://www.dicom.org.tw/cs/identityCardNumber_tw ",
-              "value": "A123456789"
-              }
-        }        
-        </pre>
+    <br>
+        <div class="main">
+            <h1>台灣身份證字號規定</h1>
+            <li class="introduction">
+                目前的中華民國身分證字號一共有十碼，包括起首一個大寫的英文字母與接續的九個阿拉伯數字。
+            其中首碼英文代碼是以初次登記的戶籍地（報戶口之地區）來區分的，而首位數字則是拿來區分
+            性別，男性為1、女性為2，與ISO 5218以及類似的《中華民國國家標準》CNS 8381《資訊交換
+            -人類性別表示法》的用法相同。
+            </li>
+            </br>
+            <hr>
+        </div>
+        <div>
+            <pre class="json">
+                { "type": {
+                    "coding": [
+                      {
+                        "system": "https://www.dicom.org.tw/cs/identifierValusSet",
+                     "code": " IDN"
+                      }	
+                    ]	
+                },
+                "system": "https://www.dicom.org.tw/cs/identityCardNumber_tw ",
+                "value": "A123456789"
+                }
+            }        
+            </pre>
+            
+        </div>
+    
     </body>
 </html>
