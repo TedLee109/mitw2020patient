@@ -28,8 +28,7 @@
   <div class="main">
     <h1>台灣護照號碼</h1>
     <li class="introduction">
-        現在的台灣晶片護照，護照號碼共9位數，沒有英文。
-    護照號碼並非隨機編碼。且每次更換護照，護照號碼都會變動。
+        當外籍人士來台時，若需要醫療服務，可使用護照號碼。
     </li>
     <il class="introduction">護照號碼規則說明網站連結：</il>
     <li class="introduction">1.https://tw.answers.yahoo.com/question/index?qid=20060322000012KK00302</li>
@@ -37,17 +36,9 @@
     <br>
     <hr>
     <pre >  
-        {   "type": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/ValueSet/identifier-type"
-                "code": "PPN"
-              }
-            ]
-          }
-          "system": " https://www.dicom.org.tw/cs/ppn_tw"
-          "value": "12345678910"
-      }    
+        { "system": "http://www.dicom.org.tw/cs/passportnumber"，
+          "value": "q12345678910"
+          }    
     </pre>
   </div>
 </body>
