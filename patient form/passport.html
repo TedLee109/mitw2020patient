@@ -26,9 +26,9 @@
 <body>
   <br>
   <div class="main">
-    <h1>台灣護照號碼</h1>
+    <h1>護照號碼</h1>
     <li class="introduction">
-        當外籍人士來台時，若需要醫療服務，可使用護照號碼。
+        當外國人來台灣時，若有就醫需求，可以使用護照號碼。
     </li>
     <il class="introduction">護照號碼規則說明網站連結：</il>
     <li class="introduction">1.https://tw.answers.yahoo.com/question/index?qid=20060322000012KK00302</li>
@@ -36,9 +36,17 @@
     <br>
     <hr>
     <pre >  
-        { "system": "http://www.dicom.org.tw/cs/passportnumber"，
-          "value": "q12345678910"
-          }    
+        {   "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/identifier-type"
+                "code": "PPN"
+              }
+            ]
+          }
+          "system": " https://www.dicom.org.tw/cs/ppn_tw"
+          "value": "12345678910"
+      }    
     </pre>
   </div>
 </body>
