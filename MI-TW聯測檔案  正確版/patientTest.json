@@ -1,0 +1,112 @@
+{
+          "resourceType": "Patient",
+          "id": "3549",
+          "meta": {
+            "versionId": "3",
+            "lastUpdated": "2020-11-06T20:30:01.797+08:00",
+            "source": "#kS5rP6ZfpLPL8DtV"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Alice <b>WANG </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>AB77777777</td></tr><tr><td>Address</td><td><span>內湖路一段516號5樓 </span><br/><span>台北市 </span><span>台北市 </span></td></tr><tr><td>Date of birth</td><td><span>10 October 1988</span></td></tr></tbody></table></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://www.dicom.org.tw/cs/passportNumber",
+              "value": "AB12345678"
+            },
+            {
+              "system": "https://www.dicom.org.tw/cs/ResidentNumber_tw",
+              "value": "EB87654321"
+            }
+          ],
+          "active": true,
+          "name": [
+            {
+              "text": "Ted Lee",
+              "family": "Lee",
+              "given": [
+                "Ted"
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "0905490286",
+              "use": "mobile"
+            },
+            {
+              "system": "email",
+              "value": "generous@ebmtech.com"
+            },
+            {
+              "system": "url",
+              "value": "https://line.me/ti/p/dennistest"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "2004-05-07",
+          "address": [
+            {
+              "text": "114 台灣省台北市內湖路一段516號5樓",
+              "line": [
+                "內湖路一段516號5樓"
+              ],
+              "city": "台北市",
+              "postalCode": "114",
+              "country": "台北市"
+            }
+          ],
+          "contact": [
+            {
+              "relationship": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                      "code": "N"
+                    }
+                  ],
+                  "text": "Next - of - Kin"
+                }
+              ],
+              "name": {
+                "text": "Willy Huang",
+                "family": "Willy",
+                "given": [
+                  "Huang"
+                ]
+              },
+              "telecom": [
+                {
+                  "system": "phone",
+                  "value": "0909856987",
+                  "use": "mobile"
+                },
+                {
+                  "system": "email",
+                  "value": "willybest@ebmtech.com"
+                },
+                {
+                  "system": "url",
+                  "value": "https://line.me/ti/p/dennistest"
+                }
+              ],
+              "address": {
+                "text": "114 台灣省台北市中正區市民大道三段2號2樓",
+                "line": [
+                  "市民大道三段2號2樓"
+                ],
+                "city": "台北市",
+                "postalCode": "114",
+                "country": "台灣省"
+              }
+            }
+          ],
+          "managingOrganization": {
+            "reference": "Organization/EBM.ForContact"
+          }
+        }
+
+  
